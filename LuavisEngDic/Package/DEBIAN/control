@@ -1,0 +1,17 @@
+Package: com.Luavis.LuavisEngDic
+Name: LuavisEngDic
+Version: 1.0-1
+Description: Dictionary For iPhone in Widget Developed by Luavis
+Section: Addons (NotificationCenter)
+Depends: firmware (>= 5.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Luavis
+dev: Luavis
+Homepage: http://www.facebook.com/luavis
+Depiction: 
+Maintainer: luavis
+Icon: file:///User/Library/LuavisEngDic/icon.png
+

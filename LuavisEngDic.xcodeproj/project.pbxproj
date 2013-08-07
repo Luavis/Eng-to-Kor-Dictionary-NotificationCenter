@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71F3B7D15526FA9000D2DCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F3B7C15526FA9000D2DCF /* Foundation.framework */; };
+		A71F3B7F15526FA9000D2DCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F3B7E15526FA9000D2DCF /* UIKit.framework */; };
+		A71F3B8A15526FA9000D2DCF /* LuavisEngDicController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71F3B8915526FA9000D2DCF /* LuavisEngDicController.m */; };
+		A7794510155271BC0069A214 /* LuavisDictionaryCaller.h in Sources */ = {isa = PBXBuildFile; fileRef = A779450E155271BC0069A214 /* LuavisDictionaryCaller.h */; };
+		A7794511155271BC0069A214 /* LuavisDictionaryCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = A779450F155271BC0069A214 /* LuavisDictionaryCaller.m */; };
+		A7794514155271F00069A214 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7794513155271F00069A214 /* libsqlite3.dylib */; };
+		A77945171552721D0069A214 /* LuavisAlertView.h in Sources */ = {isa = PBXBuildFile; fileRef = A77945151552721D0069A214 /* LuavisAlertView.h */; };
+		A77945181552721D0069A214 /* LuavisAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A77945161552721D0069A214 /* LuavisAlertView.m */; };
+		A779451A155272510069A214 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7794519155272510069A214 /* QuartzCore.framework */; };
+		A7EECBF71560876B0035227B /* LuavisEngDicLogController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EECBF51560876B0035227B /* LuavisEngDicLogController.h */; };
+		A7EECBF81560876B0035227B /* LuavisEngDicLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EECBF61560876B0035227B /* LuavisEngDicLogController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A71381951589F97100055E73 /* LuavisEngDic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LuavisEngDic.plist; sourceTree = "<group>"; };
+		A71381961589F97100055E73 /* LuavisEngDic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LuavisEngDic.png; sourceTree = "<group>"; };
+		A71381971589F97100055E73 /* LuavisEngDic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LuavisEngDic@2x.png"; sourceTree = "<group>"; };
+		A71F3B7915526FA9000D2DCF /* LuavisEngDic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = LuavisEngDic; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71F3B7C15526FA9000D2DCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A71F3B7E15526FA9000D2DCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A71F3B8315526FA9000D2DCF /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A71F3B8415526FA9000D2DCF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A71F3B8615526FA9000D2DCF /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A71F3B8715526FA9000D2DCF /* LuavisEngDic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuavisEngDic-Prefix.pch"; sourceTree = "<group>"; };
+		A71F3B8815526FA9000D2DCF /* LuavisEngDicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = LuavisEngDicController.h; sourceTree = "<group>"; };
+		A71F3B8915526FA9000D2DCF /* LuavisEngDicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuavisEngDicController.m; sourceTree = "<group>"; };
+		A71F3B8F15526FA9000D2DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/LuavisEngDic.bundle/Info.plist; sourceTree = "<group>"; };
+		A71F3B9015526FA9000D2DCF /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/LuavisEngDic.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		A71F3B9115526FA9000D2DCF /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/LuavisEngDic.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		A71F3B9215526FA9000D2DCF /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/LuavisEngDic.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		A779450E155271BC0069A214 /* LuavisDictionaryCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = LuavisDictionaryCaller.h; sourceTree = "<group>"; };
+		A779450F155271BC0069A214 /* LuavisDictionaryCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuavisDictionaryCaller.m; sourceTree = "<group>"; };
+		A7794513155271F00069A214 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A77945151552721D0069A214 /* LuavisAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = LuavisAlertView.h; sourceTree = "<group>"; };
+		A77945161552721D0069A214 /* LuavisAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuavisAlertView.m; sourceTree = "<group>"; };
+		A7794519155272510069A214 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A7EECBF51560876B0035227B /* LuavisEngDicLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuavisEngDicLogController.h; sourceTree = "<group>"; };
+		A7EECBF61560876B0035227B /* LuavisEngDicLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuavisEngDicLogController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A71F3B7515526FA9000D2DCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A779451A155272510069A214 /* QuartzCore.framework in Frameworks */,
+				A7794514155271F00069A214 /* libsqlite3.dylib in Frameworks */,
+				A71F3B7D15526FA9000D2DCF /* Foundation.framework in Frameworks */,
+				A71F3B7F15526FA9000D2DCF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A71381921589F97100055E73 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A71381931589F97100055E73 /* PreferenceLoader */,
+			);
+			name = Library;
+			path = Package/Library;
+			sourceTree = "<group>";
+		};
+		A71381931589F97100055E73 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A71381941589F97100055E73 /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		A71381941589F97100055E73 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				A71381951589F97100055E73 /* LuavisEngDic.plist */,
+				A71381961589F97100055E73 /* LuavisEngDic.png */,
+				A71381971589F97100055E73 /* LuavisEngDic@2x.png */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		A71F3B6D15526FA9000D2DCF = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8015526FA9000D2DCF /* LuavisEngDic */,
+				A71F3B7B15526FA9000D2DCF /* Frameworks */,
+				A71F3B7A15526FA9000D2DCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A71F3B7A15526FA9000D2DCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B7915526FA9000D2DCF /* LuavisEngDic */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A71F3B7B15526FA9000D2DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7794513155271F00069A214 /* libsqlite3.dylib */,
+				A7794519155272510069A214 /* QuartzCore.framework */,
+				A71F3B7C15526FA9000D2DCF /* Foundation.framework */,
+				A71F3B7E15526FA9000D2DCF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71F3B8015526FA9000D2DCF /* LuavisEngDic */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8815526FA9000D2DCF /* LuavisEngDicController.h */,
+				A71F3B8915526FA9000D2DCF /* LuavisEngDicController.m */,
+				A77945151552721D0069A214 /* LuavisAlertView.h */,
+				A77945161552721D0069A214 /* LuavisAlertView.m */,
+				A779450E155271BC0069A214 /* LuavisDictionaryCaller.h */,
+				A779450F155271BC0069A214 /* LuavisDictionaryCaller.m */,
+				A7EECBF51560876B0035227B /* LuavisEngDicLogController.h */,
+				A7EECBF61560876B0035227B /* LuavisEngDicLogController.m */,
+				A71F3B8115526FA9000D2DCF /* Package */,
+				A71F3B8515526FA9000D2DCF /* Supporting Files */,
+			);
+			path = LuavisEngDic;
+			sourceTree = "<group>";
+		};
+		A71F3B8115526FA9000D2DCF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A71381921589F97100055E73 /* Library */,
+				A71F3B8215526FA9000D2DCF /* DEBIAN */,
+				A71F3B8B15526FA9000D2DCF /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A71F3B8215526FA9000D2DCF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8315526FA9000D2DCF /* control.txt */,
+				A71F3B8415526FA9000D2DCF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A71F3B8515526FA9000D2DCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8615526FA9000D2DCF /* PackageVersion.plist */,
+				A71F3B8715526FA9000D2DCF /* LuavisEngDic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A71F3B8B15526FA9000D2DCF /* System */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8C15526FA9000D2DCF /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		A71F3B8C15526FA9000D2DCF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8D15526FA9000D2DCF /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A71F3B8D15526FA9000D2DCF /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8E15526FA9000D2DCF /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		A71F3B8E15526FA9000D2DCF /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				A71F3B8F15526FA9000D2DCF /* Info.plist */,
+				A71F3B9015526FA9000D2DCF /* InfoPlist.strings */,
+				A71F3B9115526FA9000D2DCF /* WeeAppBackground@2x.png */,
+				A71F3B9215526FA9000D2DCF /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A71F3B7615526FA9000D2DCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EECBF71560876B0035227B /* LuavisEngDicLogController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A71F3B7815526FA9000D2DCF /* LuavisEngDic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71F3B9515526FA9000D2DCF /* Build configuration list for PBXNativeTarget "LuavisEngDic" */;
+			buildPhases = (
+				A71F3B7415526FA9000D2DCF /* Sources */,
+				A71F3B7515526FA9000D2DCF /* Frameworks */,
+				A71F3B7615526FA9000D2DCF /* Headers */,
+				A71F3B7715526FA9000D2DCF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuavisEngDic;
+			productName = LuavisEngDic;
+			productReference = A71F3B7915526FA9000D2DCF /* LuavisEngDic */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71F3B6F15526FA9000D2DCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A71F3B7215526FA9000D2DCF /* Build configuration list for PBXProject "LuavisEngDic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A71F3B6D15526FA9000D2DCF;
+			productRefGroup = A71F3B7A15526FA9000D2DCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A71F3B7815526FA9000D2DCF /* LuavisEngDic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A71F3B7715526FA9000D2DCF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A71F3B7415526FA9000D2DCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71F3B8A15526FA9000D2DCF /* LuavisEngDicController.m in Sources */,
+				A7794510155271BC0069A214 /* LuavisDictionaryCaller.h in Sources */,
+				A7794511155271BC0069A214 /* LuavisDictionaryCaller.m in Sources */,
+				A77945171552721D0069A214 /* LuavisAlertView.h in Sources */,
+				A77945181552721D0069A214 /* LuavisAlertView.m in Sources */,
+				A7EECBF81560876B0035227B /* LuavisEngDicLogController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A71F3B9315526FA9000D2DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A71F3B9415526FA9000D2DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A71F3B9615526FA9000D2DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = LuavisEngDic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuavisEngDic/LuavisEngDic-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/LuavisEngDic.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.0;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.16.110.189;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = 172.16.115.45;
+			};
+			name = Release;
+		};
+		A71F3B9715526FA9000D2DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = LuavisEngDic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuavisEngDic/LuavisEngDic-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/LuavisEngDic.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.0;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.16.110.189;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = 172.16.115.45;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A71F3B7215526FA9000D2DCF /* Build configuration list for PBXProject "LuavisEngDic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71F3B9315526FA9000D2DCF /* Release */,
+				A71F3B9415526FA9000D2DCF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71F3B9515526FA9000D2DCF /* Build configuration list for PBXNativeTarget "LuavisEngDic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71F3B9615526FA9000D2DCF /* Release */,
+				A71F3B9715526FA9000D2DCF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A71F3B6F15526FA9000D2DCF /* Project object */;
+}
